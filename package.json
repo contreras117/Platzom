@@ -1,0 +1,25 @@
+{
+  "name": "platzom",
+  "version": "0.1.0",
+  "description": "Traductor de idioma platzom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contreras117/Platzom.git"
+  },
+  "keywords": [
+    "platzom",
+    "plazi",
+    "fundamentos",
+    "javascript",
+    "js"
+  ],
+  "author": "Daniel Contreras <daniel_contreras117@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contreras117/Platzom/issues"
+  }
+}
