@@ -1,0 +1,32 @@
+Se creo el proyecto con npm init y se configuro de acurdo a los solicitado.
+
+Se creo el archivo platzom.js dentro de la carpeta src
+
+Se configuro babel: (pasos sacados de https://babeljs.io/docs/setup/#installation)
+comando npm install --save-dev babel-cli   --- para guardar en el archivo .json la dependencia
+de desarrollo. Una dependencia de desarrollo no es necesaria para que el package funcione, sino 
+que es necesaria para generar el archivo (o rachivos) distribuible
+
+Se agrego dentro de package.json el script "babel src/platzom.js -d dist"
+
+Se creo la carpeta dist, que es donde estara el codigo final
+
+Se creo el archivo .babelrc (archivo de configuracion de babel) con el siguiente codigo:
+{
+  "presets": ["env"]
+}
+
+Se ejecuto el comando npm install babel-preset-env --save-dev  --- que agrega la dependencia de env preset
+para transformar todo a ES2015+
+
+Para realizar la transformacion a js compatible con todos los navegadores, se ejecuta el
+comando declarado en package.json: nmp run buildBabel
+
+Dentro de package.json se cambio la propiedad main para que haga referencia al archivo
+del codigo ya transformado dist/src/platzom.js
+
+
+Para escribir test del codigo se uso dos dependencias de desarrollo, mocha y chai.
+mocha se usa para correr los test y chai para hacer aserciones.
+
+comando npm install --save-dev mocha chai

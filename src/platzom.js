@@ -2,7 +2,7 @@
 // con la palabra default no son necesarias las llaves {}: import platzom from 'platzom'
 
 
-export default const platzom = (str) => {
+export default function platzom(str) {
   let translation = str;
 
   //Si la palabra original es un palindromo, ninguna regla anterior cuenta
@@ -22,7 +22,7 @@ export default const platzom = (str) => {
     translation = translation.slice(0, -2);
   }
 
-  //Si la palabra termina con z, se le añade "pe" al final.
+  //Si la palabra inicia con z, se le añade "pe" al final.
   if (translation.toLowerCase().startsWith("z")){
     translation += "pe";
   }
