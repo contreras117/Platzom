@@ -26,7 +26,17 @@ Dentro de package.json se cambio la propiedad main para que haga referencia al a
 del codigo ya transformado dist/src/platzom.js
 
 
+------------------------------------------------TEST------------------------------------------------------------
+
 Para escribir test del codigo se uso dos dependencias de desarrollo, mocha y chai.
 mocha se usa para correr los test y chai para hacer aserciones.
 
 comando npm install --save-dev mocha chai
+
+Se creo la carpeta test con el archivo test.js
+
+Se escribio el codigo para los test en test.js
+
+Se agrego el scipt "test" con el comando "mocha" en package.json
+
+Para correr los test se ejecuta el comando npm run test
