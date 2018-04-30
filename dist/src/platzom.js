@@ -33,7 +33,7 @@ function platzom(str) {
     translation = translation.slice(0, -2);
   }
 
-  //Si la palabra termina con z, se le añade "pe" al final.
+  //Si la palabra inicia con z, se le añade "pe" al final.
   if (translation.toLowerCase().startsWith("z")) {
     translation += "pe";
   }
